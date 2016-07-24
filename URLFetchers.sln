@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URLFetchers.Library", "URLFetchers.Library\URLFetchers.Library.csproj", "{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URLFetchers.UnitTests", "URLFetchers.UnitTests\URLFetchers.UnitTests.csproj", "{781241EF-8D96-4B6C-BA98-85BC25BAD31D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URLFetchers.Tests", "URLFetchers.Tests\URLFetchers.Tests.csproj", "{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}.Debug|x86.Build.0 = Debug|Any CPU
+		{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}.Release|x86.ActiveCfg = Release|Any CPU
+		{29A73DDE-AC3C-45BD-B502-3DF074F8DCBD}.Release|x86.Build.0 = Release|Any CPU
+		{781241EF-8D96-4B6C-BA98-85BC25BAD31D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781241EF-8D96-4B6C-BA98-85BC25BAD31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781241EF-8D96-4B6C-BA98-85BC25BAD31D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{781241EF-8D96-4B6C-BA98-85BC25BAD31D}.Debug|x86.Build.0 = Debug|Any CPU
+		{781241EF-8D96-4B6C-BA98-85BC25BAD31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781241EF-8D96-4B6C-BA98-85BC25BAD31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781241EF-8D96-4B6C-BA98-85BC25BAD31D}.Release|x86.ActiveCfg = Release|Any CPU
+		{781241EF-8D96-4B6C-BA98-85BC25BAD31D}.Release|x86.Build.0 = Release|Any CPU
+		{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}.Debug|x86.Build.0 = Debug|Any CPU
+		{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}.Release|x86.ActiveCfg = Release|Any CPU
+		{D4AEB059-B919-44BF-853D-0A3E93F4FEC1}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
