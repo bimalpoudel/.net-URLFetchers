@@ -75,5 +75,28 @@ namespace URLFetchers.UnitTests
             string response = uf.post(request_url, data);
             Assert.AreEqual(response, String.Format("{0}|{1}", data["username"], data["password"]));
         }
+
+        [TestMethod]
+        [TestCategory("POST")]
+        public void ComplexDataPOST()
+        {
+            URLFetcher uf = new URLFetcher();
+            string request_url = "http://localhost/api/post-complex.php";
+            string response = "";
+            // echo json_encode($_POST);
+
+            NameValueCollection data = new NameValueCollection();
+            data["login[username]"] = "username";
+            data["login[password]"] = "password";
+            data["token"] = "xyz";
+
+            response = uf.post(request_url, data);
+
+            Assert.IsTrue(response.Contains("token"));
+            Assert.IsTrue(response.Contains("complex"));
+
+            // System.FormatException: Input string was not in a correct format.
+            //Assert.AreEqual(response, String.Format("{\"login\":{\"username\":\"{0}\",\"password\":\"{1}\"},\"token\":\"{2}\"}", data["login[username]"], data["login[password]"], data["token"]));
+        }
     }
 }

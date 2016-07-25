@@ -50,14 +50,19 @@ namespace URLFetchers.Library
             /**
              * @see http://technet.rapaport.com/info/lotupload/samplecode/full_example.aspx
              */
+            string responseString = "";
             this.Encoding = System.Text.Encoding.UTF8;
-            byte[] responseBytes = UploadValues(url, "POST", data);
-            //string resultAuthTicket = System.Text.Encoding.UTF8(responseBytes);
-            string resultAuthTicket = this.Encoding.GetString(responseBytes);
-            //Dispose();
 
-            //return responseBytes.ToString();
-            return resultAuthTicket;
+            try
+            {
+                byte[] responseBytes = UploadValues(url, "POST", data);
+                responseString = this.Encoding.GetString(responseBytes).ToString();
+            }
+            catch(Exception)
+            {
+
+            }
+            return responseString;
         }
 
     }

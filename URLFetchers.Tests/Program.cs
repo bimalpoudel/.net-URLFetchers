@@ -15,6 +15,7 @@ namespace URLFetchers.Tests
             Program p = new Program();
             p.testGET();
             p.testPOST();
+            p.testComplexDataPOST();
 
             Console.ReadLine();
         }
@@ -38,6 +39,21 @@ namespace URLFetchers.Tests
 
             string response = uf.post(request_url, data);
 
+            Console.WriteLine(response);
+        }
+
+        public void testComplexDataPOST()
+        {
+            URLFetcher uf = new URLFetcher();
+            string request_url = "http://localhost/api/post-complex.php";
+            // echo implode('|', $_POST);
+
+            NameValueCollection data = new NameValueCollection();
+            data["login[username]"] = "username";
+            data["login[password]"] = "password";
+            data["token"] = "xyz";
+
+            string response = uf.post(request_url, data);
             Console.WriteLine(response);
         }
     }
