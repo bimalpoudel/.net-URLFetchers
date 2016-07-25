@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using URLFetchers.Library;
+using System.Collections.Specialized;
 
 /**
  * @see https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.classinitializeattribute.aspx
@@ -17,7 +18,7 @@ namespace URLFetchers.UnitTests
         private string lorem_url = "http://localhost/bimal/com/shouldrule/subdomains/com/shouldrule/code/public_html/generate.php";
 
         [TestMethod]
-        [TestCategory("URLFetcher")]
+        [TestCategory("GET")]
         public void CodeGeneratorLength()
         {
             URLFetcher uf = new URLFetcher();
@@ -28,7 +29,7 @@ namespace URLFetchers.UnitTests
         }
 
         [TestMethod]
-        [TestCategory("URLFetcher")]
+        [TestCategory("GET")]
         public void BrowseURL()
         {
             URLFetcher uf = new URLFetcher();
@@ -39,7 +40,7 @@ namespace URLFetchers.UnitTests
         }
 
         [TestMethod]
-        [TestCategory("URLFetcher")]
+        [TestCategory("GET")]
         public void FetchEmptyURL()
         {
             URLFetcher uf = new URLFetcher();
@@ -51,6 +52,6 @@ namespace URLFetchers.UnitTests
             Assert.AreEqual(invalid_data, "");
             //Console.WriteLine("Invalid data: "+ invalid_data);
         }
-        
+
     }
 }
